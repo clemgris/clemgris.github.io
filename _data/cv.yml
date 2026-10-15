@@ -1,0 +1,90 @@
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Ph.D. Student
+      logo: isir.png
+      institution: ISIR, Sorbonne Université, Paris, France
+      year: 2024 - present
+      description:
+        - Supervised by <a href="https://www.isir.upmc.fr/personnel/chetouani/">Mohamed Chetouani</a> and <a href="https://www.isir.upmc.fr/personnel/sigaud/">Olivier Sigaud</a>, working on language-conditioned manipulation.
+        - Detection of semantic-misalignment robotic failures with vision-language models.
+        - Hierarchical diffusion policies and their fine-tuning for language-conditioned control.
+    - title: Research Intern
+      logo: oxford.png
+      institution: Whiteson Research Lab (WhiRL), University of Oxford, UK
+      year: 2023 - 2024
+      description:
+        - Supervised by <a href="https://www.cs.ox.ac.uk/people/shimon.whiteson/">Shimon Whiteson</a>, on the imitation gap in reinforcement learning environments.
+        - Built IGDrivSim, an imitation gap benchmark for autonomous driving based on the Waymo Open Motion Dataset, studying how observability constraints affect imitation learning (JAX).
+    - title: Research Intern
+      logo: isir.png
+      institution: ISIR, Sorbonne Université, Paris, France
+      year: 2023
+      description:
+        - Theory of Mind between AI agents in a teacher-learner setup.
+        - Modelled Theory of Mind as a Bayesian process over a finite set of learner types, and implemented a deep policy-prediction model (PyTorch).
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: Data Scientist Research Intern
+      logo: ge_healthcare.png
+      institution: GE HealthCare, France
+      year: 2022
+      description:
+        - Generic encoder for 3D organ and vessel segmentation on CT images, with multi-output training architectures and transfer learning strategies (TensorFlow).
+    - title: Software Developer Intern
+      logo: hexaly.png
+      institution: LocalSolver (now <a href="https://www.hexaly.com/">Hexaly</a>), Paris, France
+      year: 2021
+      description:
+        - Implemented state-of-the-art pre-processing methods for Mixed Integer Linear Programs and the transfer of solutions from local search to the MIP solver's branch-and-cut (C++).
+        - Mathematical modelling of the industrial pooling problem.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: M.Sc. Mathematics, Vision and Machine Learning (MVA)
+      logo: ens_paris_saclay.png
+      institution: ENS Paris-Saclay, France
+      year: 2022 - 2023
+      description:
+        - Reinforcement learning, deep RL, sequential learning
+        - 3D computer vision, image denoising, object recognition
+        - Optimal transport, advanced optimisation, graphs in machine learning
+        - Natural language processing, time series analysis
+    - title: Engineering Master's in Mathematics and Computer Science
+      logo: ecole_des_ponts.png
+      institution: École des Ponts ParisTech, France
+      year: 2019 - 2023
+      description:
+        - Mathematical optimisation, operational research, machine learning
+        - Statistics and data analysis, random processes, game theory
+
+- title: Summer Schools
+  type: time_table
+  contents:
+    - title: <a href="https://team.inria.fr/ockham/peyresq-summer-school-on-generative-modelling-and-optimal-transport/">Peyresq Summer School on Generative Modelling and Optimal Transport</a>
+      logo: gretsi.png
+      institution: Peyresq, France
+      year: 2026
+      description:
+        - One-week school organised by Mathurin Massias and Quentin Bertrand, with lectures by Julie Delon, Rémi Emonet, Hugo Cui, Ségolène Martin, Titouan Vayer and Kimia Nadjahi.
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Turing Seminar (EffiSciences)
+      logo: effisciences.png
+      institution: ENS Paris-Saclay, France
+      year: 2022 - 2023
+      description:
+        - Think tank on AI development and safety; study of state-of-the-art methods in text, vision and reinforcement learning.
+
+- title: Skills
+  type: map
+  contents:
+    - name: Languages
+      value: French (native), English (C1, Cambridge Advanced), Spanish (B2)
+    - name: Programming
+      value: Python (PyTorch, JAX, Haiku, TensorFlow), C++, C#, Java, R, LaTeX

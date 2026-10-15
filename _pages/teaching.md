@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /teaching/
+title: teaching
+description: Overview of my teaching experience.
+nav: true
+nav_order: 4
+---
+
+### Teaching Experience
+
+- **Teaching Assistant:**
+  - **Natural Language Processing and Sentiment Analysis**
+    - [Master Year 2 Data Science IP Paris](https://www.ip-paris.fr/en/education/masters/applied-mathematics-and-statistics-program/master-year-2-data-science), Institut Polytechnique de Paris

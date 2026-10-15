@@ -1,0 +1,153 @@
+@inproceedings{aissi2026prism,
+  selected={true},
+  title={PRISM: Perception Reasoning Interleaved for Sequential Decision Making},
+  author={Aissi, Mohamed-Salim and Grislain, Clémence and Romac, Clément and Soulier, Laure and Chetouani, Mohamed and Sigaud, Olivier and Thome, Nicolas},
+  booktitle={Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  year={2026},
+  eprint={2605.05407},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2605.05407},
+  pdf={https://arxiv.org/pdf/2605.05407},
+  arxiv={2605.05407},
+  abbr={ICML 2026},
+  abstract={Scaling LLM-based embodied agents from text-only environments to complex multimodal settings remains a major challenge. Recent work identifies a perception-reasoning-decision gap in standalone Vision-Language Models (VLMs), which often overlook task-critical information. In this paper, we introduce PRISM, a framework that tightly couples perception (VLM) and decision (LLM) through a dynamic question-answer (DQA) pipeline. Instead of passively accepting the VLM's description, the LLM critiques it, probes the VLM with goal-oriented questions, and synthesizes a compact image description. This closed-loop interaction yields a sharp, task-driven understanding of the scene. We evaluate PRISM on the ALFWorld and Room-to-Room (R2R) benchmarks. We show that: (1) PRISM significantly outperforms state-of-the-art image-based models, (2) our Interactive goal-oriented perception pipeline yields systematic and substantial gains, and (3) PRISM is fully automatic, eliminating the need for handcrafted questions or answers.}
+}
+
+@inproceedings{kappel2026sim2real,
+  selected={true},
+  title={A Sim-to-Real Integration Pipeline for Training and Deployment of Chunk-Based VLA Manipulation Policies},
+  author={Kappel, Mathilde and Grislain, Clémence and Chetouani, Mohamed and Sigaud, Olivier and Annabi, Louis and Ben Amar, Faïz and Doncieux, Stéphane and Khoramshahi, Mahdi},
+  booktitle={IROS 2026 Workshop on Sim2Real and Classical Control: From Rigorous Theory to Data-Driven Robotics},
+  year={2026},
+  eprint={2609.21817},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2609.21817},
+  pdf={https://arxiv.org/pdf/2609.21817},
+  arxiv={2609.21817},
+  abbr={IROS-W 2026},
+  abstract={Vision-Language-Action (VLA) models have become a prominent paradigm for mapping multimodal inputs, including semantic instructions, visual observations of the scene, and proprioceptive observations, to robot actions. Most state-of-the-art models predict actions in the end-effector pose space as sequences of action chunks. Training and evaluating these models requires large-scale collections of real-world demonstrations, pairing robot actions with the corresponding visual and proprioceptive observations. Collecting such data on real hardware typically relies on human teleoperation, making the process costly, time-consuming, and difficult to scale. We present an open-source sim-to-real experimental protocol that addresses this bottleneck: expert trajectories generated in simulation are replayed open-loop on a real Franka FR3 setup, where the corresponding real visual and proprioceptive observations are recorded and converted into a format compatible with VLA training. The same deployment stack is then reused, in closed-loop, to evaluate a trained policy on that setup, so that data collection and evaluation share an identical hardware configuration. Because each real recording is paired with the simulated trajectory that produced it, the protocol also yields a direct measurement of the sim-to-real gap. We release the collected datasets on Hugging Face together with the pipeline source code https://gitlab.isir.upmc.fr/kappel/sim2real_public_chunk_control.}
+}
+
+@inproceedings{rahimi2026intentvlm,
+  selected={true},
+  title={IntentVLM: Open-Vocabulary Intention Recognition through Forward-Inverse Modeling with Video-Language Models},
+  author={Rahimi, Hamed and Grislain, Clémence and Jacquet Crétides, Adrien and Sigaud, Olivier and Chetouani, Mohamed},
+  booktitle={Proceedings of the 28th International Conference on Multimodal Interaction (ICMI)},
+  year={2026},
+  eprint={2604.24002},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2604.24002},
+  pdf={https://arxiv.org/pdf/2604.24002},
+  arxiv={2604.24002},
+  abbr={ICMI 2026},
+  doi={10.1145/3776574.3831202},
+  abstract={Improving the effectiveness of human-robot interaction requires social robots to accurately infer human goals through robust intention understanding. This challenge is particularly critical in multimodal settings, where agents must integrate heterogeneous signals including text, visual cues to form a coherent interpretation of user intent. This paper presents IntentVLM, a novel two-stage video-language framework designed for open-vocabulary human intention recognition. The approach is inspired by forward-inverse modeling in cognitive science by decomposing intention understanding into goal candidate generation followed by structured inference through selection, effectively reducing hallucinations in latent reasoning. Evaluated on the IntentQA and Inst-IT Bench datasets, IntentVLM achieves state-of-the-art results with up to 80\% accuracy, notably surpassing the baseline performance by 30\% and matches human performance. Our findings demonstrate that this structured reasoning approach enhances open-vocabulary intention understanding without catastrophic forgetting, offering a robust foundation for human-centered robotics.}
+}
+
+@inproceedings{grislain2026online,
+  title={Online Self-Training for Co-Adaptation in Hierarchical Diffusion Policies},
+  author={Grislain, Clémence and Kappel, Mathilde and Sigaud, Olivier and Chetouani, Mohamed},
+  booktitle={ICML 2026 Workshop on Decision-Making from Offline Datasets to Online Adaptation (DEMO)},
+  year={2026},
+  eprint={2603.05291},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2603.05291},
+  pdf={https://arxiv.org/pdf/2603.05291},
+  arxiv={2603.05291},
+  abbr={ICML-W 2026},
+  selected={true},
+  abstract={Hierarchical policies decompose language-conditioned long-horizon robotic manipulation into a high-level planner and a low-level controller. However, effective coordination between HL and LL requires that both components operate on compatible subgoal distributions. We propose ORCHID, a self-training framework that enables stable online improvement of hierarchical diffusion policies by aligning planning and control through iterative refinement. By filtering policy samples via environment feedback, ORCHID identifies trajectories where the planner and controller are jointly successful and distills them back into both modules via supervised learning. This process induces a bidirectional co-adaptation: the planner grounds its subgoals in the actual reaching capabilities of the controller, while the controller specializes in the trajectory structures the planner produces. By relying on supervised distillation of filtered on-policy samples, ORCHID avoids the instability typical of online hierarchical gradient-based RL training with diffusion models. On the CALVIN benchmark, ORCHID allows a lightweight, initially weak model to outperform pure offline methods, including a Vision-Language-Action model twice its size.}
+}
+
+@inproceedings{grislain2026ifailsense,
+  title={I-FailSense: Towards General Robotic Failure Detection with Vision-Language Models},
+  author={Grislain, Clémence and Rahimi, Hamed and Sigaud, Olivier and Chetouani, Mohamed},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2026},
+  eprint={2509.16072},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2509.16072},
+  pdf={https://arxiv.org/pdf/2509.16072},
+  arxiv={2509.16072},
+  abbr={ICRA 2026},
+  doi={10.1109/ICRA57385.2026.11695934},
+  selected={true},
+  abstract={Language-conditioned robotic manipulation in open-world settings requires not only accurate task execution but also the ability to detect failures for robust deployment in real-world environments. Although recent advances in vision-language models (VLMs) have significantly improved the spatial reasoning and task-planning capabilities of robots, they remain limited in their ability to recognize their own failures. In particular, a critical yet underexplored challenge lies in detecting semantic misalignment errors, where the robot executes a task that is semantically meaningful but inconsistent with the given instruction. To address this, we propose a method for building datasets targeting Semantic Misalignment Failures detection, from existing language-conditioned manipulation datasets. We also present I-FailSense, an open-source VLM framework with grounded arbitration designed specifically for failure detection. Our approach relies on post-training a base VLM, followed by training lightweight classification heads, called FS blocks, attached to different internal layers of the VLM and whose predictions are aggregated using an ensembling mechanism. Experiments show that I-FailSense outperforms state-of-the-art VLMs, both comparable in size and larger, in detecting semantic misalignment errors. Notably, despite being trained only on semantic misalignment detection, I-FailSense generalizes to broader robotic failure categories and effectively transfers to other simulation environments and real-world with zero-shot or minimal post-training. The datasets and models are publicly released on HuggingFace (Webpage: https://clemgris.github.io/I-FailSense/).}
+}
+
+@inproceedings{shi2025controlling,
+  selected={true},
+  title={Controlling Intent Expressiveness in Robot Motion with Diffusion Models},
+  author={Shi, Wenli and Grislain, Clémence and Sigaud, Olivier and Chetouani, Mohamed},
+  booktitle={IROS 2025 Workshop on Human-aware Embodied AI},
+  year={2025},
+  eprint={2510.12370},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2510.12370},
+  pdf={https://arxiv.org/pdf/2510.12370},
+  arxiv={2510.12370},
+  abbr={IROS-W 2025},
+  abstract={Legibility of robot motion is critical in human-robot interaction, as it allows humans to quickly infer a robot's intended goal. Although traditional trajectory generation methods typically prioritize efficiency, they often fail to make the robot's intentions clear to humans. Meanwhile, existing approaches to legible motion usually produce only a single "most legible" trajectory, overlooking the need to modulate intent expressiveness in different contexts. In this work, we propose a novel motion generation framework that enables controllable legibility across the full spectrum, from highly legible to highly ambiguous motions. We introduce a modeling approach based on an Information Potential Field to assign continuous legibility scores to trajectories, and build upon it with a two-stage diffusion framework that first generates paths at specified legibility levels and then translates them into executable robot actions. Experiments in both 2D and 3D reaching tasks demonstrate that our approach produces diverse and controllable motions with varying degrees of legibility, while achieving performance comparable to SOTA. Code and project page: https://legibility-modulator.github.io.}
+}
+
+@article{aissi2025viper,
+  selected={true},
+  title={VIPER: Visual Perception and Explainable Reasoning for Sequential Decision-Making},
+  author={Aissi, Mohamed-Salim and Grislain, Clémence and Chetouani, Mohamed and Sigaud, Olivier and Soulier, Laure and Thome, Nicolas},
+  journal={arXiv preprint arXiv:2503.15108},
+  year={2025},
+  eprint={2503.15108},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2503.15108},
+  pdf={https://arxiv.org/pdf/2503.15108},
+  arxiv={2503.15108},
+  abbr={Preprint},
+  abstract={While Large Language Models (LLMs) excel at reasoning on text and Vision-Language Models (VLMs) are highly effective for visual perception, applying those models for visual instruction-based planning remains a widely open problem. In this paper, we introduce VIPER, a novel framework for multimodal instruction-based planning that integrates VLM-based perception with LLM-based reasoning. Our approach uses a modular pipeline where a frozen VLM generates textual descriptions of image observations, which are then processed by an LLM policy to predict actions based on the task goal. We fine-tune the reasoning module using behavioral cloning and reinforcement learning, improving our agent's decision-making capabilities. Experiments on the ALFWorld benchmark show that VIPER significantly outperforms state-of-the-art visual instruction-based planners while narrowing the gap with purely text-based oracles. By leveraging text as an intermediate representation, VIPER also enhances explainability, paving the way for a fine-grained analysis of perception and reasoning components.}
+}
+
+@inproceedings{grislain2025igdrivsim,
+  title={IGDrivSim: A Benchmark for the Imitation Gap in Autonomous Driving},
+  author={Grislain, Clémence and Vuorio, Risto and Lu, Cong and Whiteson, Shimon},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2025},
+  eprint={2411.04653},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2411.04653},
+  pdf={https://arxiv.org/pdf/2411.04653},
+  arxiv={2411.04653},
+  abbr={IROS 2025},
+  doi={10.1109/IROS60139.2025.11247054},
+  selected={true},
+  abstract={Developing autonomous vehicles that can navigate complex environments with human-level safety and efficiency is a central goal in self-driving research. A common approach to achieving this is imitation learning, where agents are trained to mimic human expert demonstrations collected from real-world driving scenarios. However, discrepancies between human perception and the self-driving car's sensors can introduce an $\textit\{imitation\}$ gap, leading to imitation learning failures. In this work, we introduce $\textbf\{IGDrivSim\}$, a benchmark built on top of the Waymax simulator, designed to investigate the effects of the imitation gap in learning autonomous driving policy from human expert demonstrations. Our experiments show that this perception gap between human experts and self-driving agents can hinder the learning of safe and effective driving behaviors. We further show that combining imitation with reinforcement learning, using a simple penalty reward for prohibited behaviors, effectively mitigates these failures. Our code is open-sourced at: https://github.com/clemgris/IGDrivSim.git.}
+}
+
+@article{vuorio2024bayesian,
+  selected={true},
+  title={A Bayesian Solution To The Imitation Gap},
+  author={Vuorio, Risto and Fellows, Mattie and Lu, Cong and Grislain, Clémence and Whiteson, Shimon},
+  journal={arXiv preprint arXiv:2407.00495},
+  year={2024},
+  eprint={2407.00495},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2407.00495},
+  pdf={https://arxiv.org/pdf/2407.00495},
+  arxiv={2407.00495},
+  abbr={Preprint},
+  abstract={In many real-world settings, an agent must learn to act in environments where no reward signal can be specified, but a set of expert demonstrations is available. Imitation learning (IL) is a popular framework for learning policies from such demonstrations. However, in some cases, differences in observability between the expert and the agent can give rise to an imitation gap such that the expert's policy is not optimal for the agent and a naive application of IL can fail catastrophically. In particular, if the expert observes the Markov state and the agent does not, then the expert will not demonstrate the information-gathering behavior needed by the agent but not the expert. In this paper, we propose a Bayesian solution to the Imitation Gap (BIG), first using the expert demonstrations, together with a prior specifying the cost of exploratory behavior that is not demonstrated, to infer a posterior over rewards with Bayesian inverse reinforcement learning (IRL). BIG then uses the reward posterior to learn a Bayes-optimal policy. Our experiments show that BIG, unlike IL, allows the agent to explore at test time when presented with an imitation gap, whilst still learning to behave optimally using expert demonstrations when no such gap exists.}
+}
+
+@article{grislain2023utility,
+  title={Utility-based Adaptive Teaching Strategies using Bayesian Theory of Mind},
+  author={Grislain, Clémence and Caselles-Dupré, Hugo and Sigaud, Olivier and Chetouani, Mohamed},
+  journal={arXiv preprint arXiv:2309.17275},
+  year={2023},
+  eprint={2309.17275},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2309.17275},
+  pdf={https://arxiv.org/pdf/2309.17275},
+  arxiv={2309.17275},
+  abbr={Preprint},
+  website={https://teacher-with-tom.github.io/},
+  selected={true},
+  abstract={Good teachers always tailor their explanations to the learners. Cognitive scientists model this process under the rationality principle: teachers try to maximise the learner's utility while minimising teaching costs. To this end, human teachers seem to build mental models of the learner's internal state, a capacity known as Theory of Mind (ToM). Inspired by cognitive science, we build on Bayesian ToM mechanisms to design teacher agents that, like humans, tailor their teaching strategies to the learners. Our ToM-equipped teachers construct models of learners' internal states from observations and leverage them to select demonstrations that maximise the learners' rewards while minimising teaching costs. Our experiments in simulated environments demonstrate that learners taught this way are more efficient than those taught in a learner-agnostic way. This effect gets stronger when the teacher's model of the learner better aligns with the actual learner's state, either using a more accurate prior or after accumulating observations of the learner's behaviour. This work is a first step towards social machines that teach us and each other, see https://teacher-with-tom.github.io.}
+}
